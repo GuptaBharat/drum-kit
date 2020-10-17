@@ -14,9 +14,9 @@ document.addEventListener("keydown", function(event){
 });
 
 
-function btnAnimation(key){
+const btnAnimation = function(key){
 
-  var tag = document.querySelector("."+key);
+  const tag = document.querySelector("."+key);
   tag.classList.add("pressed");
 
   setTimeout(function(key){
@@ -25,7 +25,7 @@ function btnAnimation(key){
 
 }
 
-function playSound(key){
+const playSound = function(key){
   let sound;
   switch (key){
     case "w":
